@@ -27,6 +27,7 @@ and open the template in the editor.
         <!-- Custom styles for this template-->
         <link href="css/sb-admin.css" rel="stylesheet">
         <script type="text/javascript" src="./js/cargaArchivos.js" ></script>
+        
 
     </head>
     <body>

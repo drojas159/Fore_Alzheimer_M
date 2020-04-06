@@ -28,6 +28,7 @@ and open the template in the editor.
         <!-- Custom styles for this template-->
         <link href="css/sb-admin.css" rel="stylesheet">
         <script type="text/javascript" src="./js/cargaArchivos.js" ></script>
+        <script type="text/javascript" src="./js/ProgressFile.js" ></script>
 
     </head>
     <body>
@@ -125,7 +126,7 @@ and open the template in the editor.
                     <!-- carga de archivo -->
                     <h3>Cargar archivos CSV correspondientes a EEG</h3>
 
-                    <form   name="formulario" method="post" enctype="multipart/form-data" >
+                    <form   name="formulario" method="post" enctype="multipart/form-data" action="FilesController?action=EEG" >
                         <!--action="archivoController?action=subir"--> 
                         <!-- ------------------ -->  
 
@@ -143,6 +144,9 @@ and open the template in the editor.
                                     <td scope ="col" > 1 </td>
                                     <td scope ="col">
                                         <input class="custom-file" type="file"  name="csv1" required >
+                                        
+                                        <!-- <button onclick="abortRead();">Cancel read</button> -->
+                                        
                                     </td>
                                 </tr>
                                 <tr>
@@ -450,81 +454,22 @@ and open the template in the editor.
                                         <input class="custom-file" type="file"  name="csv45" >
 
                                     </td>
-                                </tr>
-                                -->
+                                </tr>-->
 
                             </tbody>
                         </table>
 
-                        <input type="hidden" name="nombre1" value="" />
-                        <input type="hidden" name="nombre2" value="" />
-                        <input type="hidden" name="nombre3" value="" />
-                        <!--
-                        <input type="hidden" name="nombre4" value="" />
-                        <input type="hidden" name="nombre5" value="" />
-                        <input type="hidden" name="nombre6" value="" />
-                        <input type="hidden" name="nombre7" value="" />
-                        <input type="hidden" name="nombre8" value="" />
-                        <input type="hidden" name="nombre9" value="" />
-                        <input type="hidden" name="nombre10" value="" />
-                        <input type="hidden" name="nombre11" value="" />
-                        <input type="hidden" name="nombre12" value="" />
-                        <input type="hidden" name="nombre13" value="" />
-                        <input type="hidden" name="nombre14" value="" />
-                        <input type="hidden" name="nombre15" value="" />
-                        <input type="hidden" name="nombre16" value="" />
-                        <input type="hidden" name="nombre17" value="" />
-                        <input type="hidden" name="nombre18" value="" />
-                        <input type="hidden" name="nombre19" value="" />
-                        <input type="hidden" name="nombre20" value="" />
-                        <input type="hidden" name="nombre21" value="" />
-                        <input type="hidden" name="nombre22" value="" />
-                        <input type="hidden" name="nombre23" value="" />
-                        <input type="hidden" name="nombre24" value="" />
-                        <input type="hidden" name="nombre25" value="" />
-                        <input type="hidden" name="nombre26" value="" />
-                        <input type="hidden" name="nombre27" value="" />
-                        <input type="hidden" name="nombre28" value="" />
-                        <input type="hidden" name="nombre29" value="" />
-                        <input type="hidden" name="nombre30" value="" />
-                        <input type="hidden" name="nombre31" value="" />
-                        <input type="hidden" name="nombre32" value="" />
-                        <input type="hidden" name="nombre33" value="" />
-                        <input type="hidden" name="nombre34" value="" />
-                        <input type="hidden" name="nombre35" value="" />
-                        <input type="hidden" name="nombre36" value="" />
-                        <input type="hidden" name="nombre37" value="" />
-                        <input type="hidden" name="nombre38" value="" />
-                        <input type="hidden" name="nombre39" value="" />
-                        <input type="hidden" name="nombre40" value="" />
-                        <input type="hidden" name="nombre41" value="" />
-                        <input type="hidden" name="nombre42" value="" />
-                        <input type="hidden" name="nombre43" value="" />
-                        <input type="hidden" name="nombre44" value="" />
-                        <input type="hidden" name="nombre45" value="" />
-                        
-                        
-                        
-                        
+                       
 
                         <!-- ------------------ -->  
-                        <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"     >
-                            <button type="submit" class="btn btn-primary btn-block" onclick="cargarArchivo('EEG')">Cargar</button>
+                        <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+                            <button type="submit" class="btn btn-primary btn-block">Cargar</button>
                         </div>
                     </form>
 
-                    <iframe name="null" style="display:none;" ></iframe>
                     
-                    <form   name="formulario2" method="post" enctype="multipart/form-data" style="display:none;" >
-                        <center>
-                            <br><br>
-                            <h5> Datos cargados correctamente.</h5>
-                            <br><br>
-                         <!--<input type="submit" lass="btn btn-primary btn-lg active" value="Siguiente">-->
-                         <a href="CargarDatos_p2.jsp" class="btn btn-primary btn-lg active" role="button">Siguiente</a>
-                        </center>
-                        
-                    </form>
+                    
+                    
                     
                 </div>
 
