@@ -67,8 +67,7 @@ public class StoreCSV {
 
                     for (ArrayList<String> dato : datos) {
 
-                        documents.add(new Document("DOCUMENT", doc)
-                                .append("COUNTER", parseFloat(dato.get(0)))
+                        documents.add(new Document("COUNTER", parseFloat(dato.get(0)))
                                 .append("INTERPOLATED", parseFloat(dato.get(1)))
                                 .append("AF3", parseFloat(dato.get(2))).append("F7", parseFloat(dato.get(3)))
                                 .append("F3", parseFloat(dato.get(4))).append("FC5", parseFloat(dato.get(5)))
@@ -102,8 +101,7 @@ public class StoreCSV {
                     List<Document> documents = new ArrayList<>();
 
                     for (ArrayList<String> dato : datos) {
-                        documents.add(new Document("Document", doc)
-                                .append("Avi TimeStamp", dato.get(0))
+                        documents.add(new Document ("Avi TimeStamp", dato.get(0))
                                 .append("Frame", parseInt(dato.get(1)))
                                 .append("Spot x", parseFloat(dato.get(2)))
                                 .append("Spot y", parseFloat(dato.get(3)))

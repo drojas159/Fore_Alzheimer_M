@@ -70,7 +70,7 @@ and open the template in the editor.
                 -->
 
                 <!-- 2. Cargar datos -->
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#" >
                         <i class="fas fa-fw fa-cloud-upload-alt"></i>
                         <span>Cargar Datos</span>
@@ -88,7 +88,7 @@ and open the template in the editor.
                     -->
                 </li>
                 <!-- 3. Ejecutar Modelo-->
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="ConsultarDocPred.jsp">
                         <i class="fas fa-fw fa-signal"></i>
                         <span>Ejecutar Modelo Predictivo</span></a>
@@ -117,7 +117,7 @@ and open the template in the editor.
 
 
                     <div class="jumbotron">
-                        <h3>Cargar Archivos</h3>
+                        <h3>Recalcular Modelos</h3>
                         <br>
                         <form   name="formulario" method="post" enctype="multipart/form-data"> <!--style="display:none;"--> 
 

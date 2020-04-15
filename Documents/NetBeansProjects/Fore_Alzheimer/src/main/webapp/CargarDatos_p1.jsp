@@ -17,7 +17,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
+        <link rel="icon" type="image/jpg" href="./image/ICON.png"/>
 
         <!-- Custom fonts for this template-->
         <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
@@ -37,14 +37,7 @@ and open the template in the editor.
             <a class="navbar-brand mr-1" href="index.jsp">Fore-Alzheimer</a>
             <!-- Navbar Search -->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Buscar..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
+                
             </form>
 
             <!-- Navbar -->
@@ -53,7 +46,7 @@ and open the template in the editor.
 
                 <li class="nav-item dropdown no-arrow">
                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-user-circle fa-fw"></i>
+                        <label>Perfil</label> <i class="fas fa-user-circle fa-fw"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#">Configuraciones</a> 
@@ -70,13 +63,13 @@ and open the template in the editor.
             <!-- Sidebar -->
             <ul class="sidebar navbar-nav">
 
-                <!-- 1. Panel de Conrtrol -->
+                <!-- 1. Panel de Conrtrol 
                 <li class="nav-item">
                     <a class="nav-link" href="index.jsp">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Panel de Control</span>
                     </a>
-                </li>
+                </li>-->
 
                 <!-- 2. Cargar datos -->
                 <li class="nav-item active">
@@ -98,7 +91,7 @@ and open the template in the editor.
                 </li>
                 <!-- 3. Ejecutar Modelo-->
                 <li class="nav-item">
-                    <a class="nav-link" href="modelo.jsp">
+                    <a class="nav-link" href="ConsultarDocPred.jsp">
                         <i class="fas fa-fw fa-signal"></i>
                         <span>Ejecutar Modelo Predictivo</span></a>
                 </li>
@@ -124,6 +117,11 @@ and open the template in the editor.
                             Cargar Datos</li>
                     </ol>
                     <!-- carga de archivo -->
+                    
+  
+  
+
+
                     <h3>Cargar archivos CSV correspondientes a EEG</h3>
 
                     <form   name="formulario" method="post" enctype="multipart/form-data" action="FilesController?action=EEG" >
@@ -162,7 +160,7 @@ and open the template in the editor.
 
                                     </td>
                                 </tr>
-                                <!--
+                                
                                 <tr>
                                     <th scope ="col" rowspan="3"> Ejercicio 02 </th>
                                     <td scope ="col" > 1 </td>
@@ -405,7 +403,7 @@ and open the template in the editor.
                                     <td scope ="col"> 
                                         <input class="custom-file" type="file"  name="csv38" >
                                     </td>
-                                </tr>8
+                                </tr>
                                 <tr>
                                     <td scope ="col" > 3 </td>
                                     <td scope ="col"> 
@@ -454,7 +452,7 @@ and open the template in the editor.
                                         <input class="custom-file" type="file"  name="csv45" >
 
                                     </td>
-                                </tr>-->
+                                </tr>
 
                             </tbody>
                         </table>
@@ -462,10 +460,15 @@ and open the template in the editor.
                        
 
                         <!-- ------------------ -->  
+                        <center>
                         <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-                            <button type="submit" class="btn btn-primary btn-block">Cargar</button>
+                            
+                                <button type="submit" class="btn btn-primary btn-lg">Cargar</button>
+                           
                         </div>
+                            </center>
                     </form>
+                      
 
                     
                     

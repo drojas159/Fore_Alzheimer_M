@@ -6,6 +6,8 @@
 package com.ucatolica.fore_alzheimer.controlador;
 
 import com.ucatolica.fore_alzheimer.BDConnection.StoreCSV;
+import com.ucatolica.fore_alzheimer.model.Usuario;
+import com.ucatolica.fore_alzheimer.model.UsuarioDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -19,7 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
-
+import static java.lang.Integer.parseInt;
 /**
  *
  * @author Daniela
@@ -72,19 +74,20 @@ public class FilesController extends HttpServlet {
                 
                 ProcessFile(request, action);
                 RedirectETCSV(request, response);
-
+                break;
             case "ETCSV":
-
+                
                 ProcessFile(request, action);
-                RedirectETAVI(request, response);
+                RedirectModel(request, response);
                 break;
             case "ETAVI":
-                System.out.println("ETAVI");
+                
                 // ProcessFile(request, response,action);
                 RedirectModel(request, response);
                 break;
             default:
-                almacenar_doc(request, response, action);
+                consultar_doc(request, response,action);
+                
                 break;
         }
     }
@@ -129,6 +132,24 @@ public class FilesController extends HttpServlet {
         sesion.setAttribute("doc", documento);
         RequestDispatcher dispatcher = request.getRequestDispatcher("/CargarDatos_p1.jsp");
         dispatcher.forward(request, response);
+//        response.sendRedirect("CargarDatos_p1.jsp");
+
+    }
+    private void consultar_doc (HttpServletRequest request, HttpServletResponse response,String documento) throws IOException, ServletException {
+        UsuarioDAO dao = new UsuarioDAO();
+        
+        int Num_documento = parseInt(documento);
+        
+        Usuario usr = (Usuario) dao.consultar(Num_documento);
+        if (usr.getNum_documento()==Num_documento){
+            almacenar_doc(request, response, documento);
+        }else{
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/Paciente_Error.jsp");
+            dispatcher.forward(request, response);
+        }
+        
+        //RequestDispatcher dispatcher = request.getRequestDispatcher("/CargarDatos_p1.jsp");
+        //dispatcher.forward(request, response);
 //        response.sendRedirect("CargarDatos_p1.jsp");
 
     }

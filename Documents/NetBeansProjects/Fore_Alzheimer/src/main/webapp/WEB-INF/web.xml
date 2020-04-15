@@ -9,9 +9,17 @@
         <servlet-name>ProcesoArchivo</servlet-name>
         <url-pattern>/ProcesoArchivo</url-pattern>
     </servlet-mapping> -->
+    <servlet>
+        <servlet-name>ModelExecution</servlet-name>
+        <servlet-class>com.ucatolica.fore_alzheimer.controlador.ModelExecution</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>FilesController</servlet-name>
         <url-pattern>/FilesController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ModelExecution</servlet-name>
+        <url-pattern>/ModelExecution</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

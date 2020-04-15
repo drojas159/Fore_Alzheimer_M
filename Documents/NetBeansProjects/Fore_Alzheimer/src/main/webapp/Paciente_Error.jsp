@@ -1,6 +1,6 @@
 <%-- 
-    Document   : consultar_doc
-    Created on : 6/01/2020, 12:19:47 PM
+    Document   : Paciente_Error
+    Created on : 9/04/2020, 10:15:38 p. m.
     Author     : Daniela
 --%>
 <!DOCTYPE html>
@@ -12,10 +12,10 @@ and open the template in the editor.
 <html lang="en">
     <head>
         <title>Fore-Alzheimer</title>
-        <link rel="icon" type="image/jpg" href="./image/ICON.png"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <link rel="icon" type="image/jpg" href="./image/ICON.png"/>
 
 
         <!-- Custom fonts for this template-->
@@ -31,7 +31,7 @@ and open the template in the editor.
     <body>
         <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-            <a class="navbar-brand mr-1" href="index.jsp">Fore-Alzheimer</a>
+            <a class="navbar-brand mr-1" href="index.html">Fore-Alzheimer</a>
             <!-- Navbar Search -->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
 
@@ -43,7 +43,8 @@ and open the template in the editor.
 
                 <li class="nav-item dropdown no-arrow">
                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <label>Perfil</label>   <i class="fas fa-user-circle fa-fw"></i>
+                        <label>Perfil</label>
+                        <i class="fas fa-user-circle fa-fw"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#">Configuraciones</a> 
@@ -66,11 +67,10 @@ and open the template in the editor.
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Panel de Control</span>
                     </a>
-                </li>
-                -->
+                </li>-->
 
                 <!-- 2. Cargar datos -->
-                <li class="nav-item active">
+                <li class="nav-item  active">
                     <a class="nav-link" href="#" >
                         <i class="fas fa-fw fa-cloud-upload-alt"></i>
                         <span>Cargar Datos</span>
@@ -89,7 +89,7 @@ and open the template in the editor.
                 </li>
                 <!-- 3. Ejecutar Modelo-->
                 <li class="nav-item">
-                    <a class="nav-link" href="ConsultarDocPred.jsp">
+                    <a class="nav-link" href="modelo.jsp">
                         <i class="fas fa-fw fa-signal"></i>
                         <span>Ejecutar Modelo Predictivo</span></a>
                 </li>
@@ -114,25 +114,28 @@ and open the template in the editor.
                             <i class="fas fa-fw fa-cloud-upload-alt"></i>
                             Cargar Datos</li>
                     </ol>
-
-
                     <div class="jumbotron">
-                        <h3>Cargar Archivos</h3>
-                        <br>
-                        <form   name="formulario" method="post" enctype="multipart/form-data"> <!--style="display:none;"--> 
 
-                            <label>Inserte el documento del paciente:</label>
-                            <input type="number" class="form-control" name="doc" placeholder="Documento del paciente" required>
-                            <br><br><!--<input type="submit" lass="btn btn-primary btn-lg active" value="Siguiente">-->
-                            <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"     >
-                                <button type="submit" class="btn btn-primary btn-lg" onclick="consultarDoc()">Cargar</button>
-                            </div>
+                        <center><h3>Cargar Archivos</h3></center>
+                        <br>
+
+
+
+                        <form   name="formulario" method="post" enctype="multipart/form-data"> <!--style="display:none;"--> 
+                            <center> 
+
+                                <label>El paciente no se encuentra registrado en el Sistema ARCA.</label>
+
+
+                                <br><br><!--<input type="submit" lass="btn btn-primary btn-lg active" value="Siguiente">-->
+                                <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"     >
+
+                                    <a href="ConsultarDoc.jsp" class="btn btn-primary btn-block" role="button">Regresar</a>
+                                </div>
+                            </center> 
 
                         </form>
-
                     </div>
-
-
                 </div>
 
 

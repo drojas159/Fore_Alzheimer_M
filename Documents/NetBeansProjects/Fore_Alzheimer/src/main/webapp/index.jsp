@@ -14,6 +14,7 @@ and open the template in the editor.
 <html lang="es">
     <head>
         <title>Fore-Alzheimer</title>
+        <link rel="icon" type="image/jpg" href="./image/ICON.png"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -35,23 +36,16 @@ and open the template in the editor.
             <a class="navbar-brand mr-1" href="index.jsp">Fore-Alzheimer</a>
             <!-- Navbar Search -->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Buscar..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
+
             </form>
 
             <!-- Navbar -->
             <ul class="navbar-nav ml-auto ml-md-0">
-                
+
 
                 <li class="nav-item dropdown no-arrow">
                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-user-circle fa-fw"></i>
+                        <label>Perfil</label> <i class="fas fa-user-circle fa-fw"> </i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#">Configuraciones</a> 
@@ -68,13 +62,13 @@ and open the template in the editor.
             <!-- Sidebar -->
             <ul class="sidebar navbar-nav">
 
-                <!-- 1. Panel de Conrtrol -->
+                <!-- 1. Panel de Conrtrol 
                 <li class="nav-item active">
                     <a class="nav-link" href="#">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Panel de Control</span>
                     </a>
-                </li>
+                </li>-->
 
                 <!-- 2. Cargar datos -->
                 <li class="nav-item">
@@ -96,7 +90,7 @@ and open the template in the editor.
                 </li>
                 <!-- 3. Ejecutar Modelo-->
                 <li class="nav-item">
-                    <a class="nav-link" href="modelo.jsp">
+                    <a class="nav-link" href="ConsultarDocPred.jsp">
                         <i class="fas fa-fw fa-signal"></i>
                         <span>Ejecutar Modelo Predictivo</span></a>
                 </li>
@@ -117,12 +111,28 @@ and open the template in the editor.
                         <li class="breadcrumb-item">
                             <a href="#">Fore-Alzheimer</a>
                         </li>
-                        <li class="breadcrumb-item active">Panel de Control</li>
+                        <li class="breadcrumb-item active">Inicio</li>
                     </ol>
-
+                    <div class="jumbotron">
+                        <center>
+                        <h1>¡Bienvenido a Fore-Alzheimer!</h1>
+                        <br>
+                        <p>En este sistema podrá cargar los archivos .csv generados con el Emotiv EPOC+ y el Eye Tracker que fueron 
+                            resultado de una serie de terapias cognitivas aplicadas a un paciente que desea conocer su probabilidad de padecer la Enfermedad de Alzheimer a los 65 años.
+                        <br>   
+                        <br>
+                        <p>Haga click para empezar a cargar datos.</p>
+                        <br>
+                        <p><a class="btn btn-primary btn-lg" href="ConsultarDoc.jsp" role="button">Cargar Datos</a></p>
+                        </center>
+                    </div>
                     
+
+
+
                 </div>
-                
+
+
 
                 <!-- Footer -->
                 <footer class="sticky-footer">
