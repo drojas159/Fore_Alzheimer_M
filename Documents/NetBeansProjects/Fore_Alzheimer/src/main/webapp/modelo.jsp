@@ -74,7 +74,7 @@ and open the template in the editor.
 
                 <!-- 2. Cargar datos -->
                 <li class="nav-item">
-                    <a class="nav-link" href="CargarDatos01.jsp" >
+                    <a class="nav-link" href="ConsultarDoc.jsp" >
                         <i class="fas fa-fw fa-cloud-upload-alt"></i>
                         <span>Cargar Datos</span>
                     </a>
@@ -92,14 +92,14 @@ and open the template in the editor.
                 </li>
                 <!-- 3. Ejecutar Modelo-->
                 <li class="nav-item active">
-                    <a class="nav-link" href="ConsultarDocPred.jsp">
+                    <a class="nav-link" href="#">
                         <i class="fas fa-fw fa-signal"></i>
                         <span>Ejecutar Modelo Predictivo</span></a>
                 </li>
 
                 <!-- 4. Reportes -->
                 <li class="nav-item">
-                    <a class="nav-link" href="reportes.jsp"> 
+                    <a class="nav-link" href="ConsultarDocRes.jsp"> 
                         <i class="far fa-fw fa-file-alt"></i>
                         <span>Reportes</span></a>
                 </li>

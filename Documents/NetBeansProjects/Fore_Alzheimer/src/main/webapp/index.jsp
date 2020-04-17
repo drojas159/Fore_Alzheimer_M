@@ -33,7 +33,7 @@ and open the template in the editor.
     <body>
         <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-            <a class="navbar-brand mr-1" href="index.jsp">Fore-Alzheimer</a>
+            <a class="navbar-brand mr-1" href="#">Fore-Alzheimer</a>
             <!-- Navbar Search -->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
 
@@ -97,7 +97,7 @@ and open the template in the editor.
 
                 <!-- 4. Reportes -->
                 <li class="nav-item">
-                    <a class="nav-link" href="reportes.jsp"> 
+                    <a class="nav-link" href="ConsultarDocRes.jsp"> 
                         <i class="far fa-fw fa-file-alt"></i>
                         <span>Reportes</span></a>
                 </li>

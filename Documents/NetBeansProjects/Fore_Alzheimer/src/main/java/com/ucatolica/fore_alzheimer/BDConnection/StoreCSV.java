@@ -58,7 +58,7 @@ public class StoreCSV {
             switch (action) {
                 case "EEG": {
 
-                    MongoCollection<Document> collection = database.getCollection("EEG_" + i + "_" + doc);
+                    MongoCollection<Document> collection = database.getCollection("EEG_" + doc + "_" + i);
                     ArrayList<ArrayList<String>> datos = readCSV(archivo);
 
                     System.out.println(datos);
@@ -96,7 +96,7 @@ public class StoreCSV {
 
                 case "ETCSV": {
 
-                    MongoCollection<Document> collection = database.getCollection("ETCSV_" + i + "_" + doc);
+                    MongoCollection<Document> collection = database.getCollection("ETCSV_" + doc + "_" + i);
                     ArrayList<ArrayList<String>> datos = readCSV(archivo);
                     List<Document> documents = new ArrayList<>();
 

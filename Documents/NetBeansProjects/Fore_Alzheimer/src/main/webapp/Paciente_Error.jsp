@@ -31,7 +31,7 @@ and open the template in the editor.
     <body>
         <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-            <a class="navbar-brand mr-1" href="index.html">Fore-Alzheimer</a>
+            <a class="navbar-brand mr-1" href="index.jsp">Fore-Alzheimer</a>
             <!-- Navbar Search -->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
 
@@ -89,14 +89,14 @@ and open the template in the editor.
                 </li>
                 <!-- 3. Ejecutar Modelo-->
                 <li class="nav-item">
-                    <a class="nav-link" href="modelo.jsp">
+                    <a class="nav-link" href="ConsultarDocPred.jsp">
                         <i class="fas fa-fw fa-signal"></i>
                         <span>Ejecutar Modelo Predictivo</span></a>
                 </li>
 
                 <!-- 4. Reportes -->
                 <li class="nav-item">
-                    <a class="nav-link" href="reportes.jsp"> <!-- cambiar a charts.html-->
+                    <a class="nav-link" href="ConsultarDocRes.jsp"> <!-- cambiar a charts.html-->
                         <i class="far fa-fw fa-file-alt"></i>
                         <span>Reportes</span></a>
                 </li>

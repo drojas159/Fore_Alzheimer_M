@@ -96,7 +96,7 @@ and open the template in the editor.
 
                 <!-- 4. Reportes -->
                 <li class="nav-item">
-                    <a class="nav-link" href="reportes.jsp"> <!-- cambiar a charts.html-->
+                    <a class="nav-link" href="ConsultarDocRes.jsp"> <!-- cambiar a charts.html-->
                         <i class="far fa-fw fa-file-alt"></i>
                         <span>Reportes</span></a>
                 </li>
@@ -125,7 +125,7 @@ and open the template in the editor.
                             <input type="number" class="form-control" name="doc" placeholder="Documento del paciente" required>
                             <br><br><!--<input type="submit" lass="btn btn-primary btn-lg active" value="Siguiente">-->
                             <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"     >
-                                <button type="submit" class="btn btn-primary btn-lg" onclick="consultarDoc()">Cargar</button>
+                                <button type="submit" class="btn btn-primary btn-lg" onclick="consultarDoc('Carga')">Cargar</button>
                             </div>
 
                         </form>
