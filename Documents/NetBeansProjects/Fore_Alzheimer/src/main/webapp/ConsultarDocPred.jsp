@@ -111,8 +111,8 @@ and open the template in the editor.
                             <a href="#">Fore-Alzheimer</a>
                         </li>
                         <li class="breadcrumb-item active">
-                            <i class="fas fa-fw fa-cloud-upload-alt"></i>
-                            Cargar Datos</li>
+                            <i class="fas fa-fw fa-signal"></i>
+                        <span>Ejecutar Modelo Predictivo</span></li>
                     </ol>
 
 

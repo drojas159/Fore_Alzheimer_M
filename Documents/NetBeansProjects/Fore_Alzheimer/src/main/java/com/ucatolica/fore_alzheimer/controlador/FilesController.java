@@ -99,10 +99,10 @@ public class FilesController extends HttpServlet {
         String document = (String) doc.getAttribute("doc");
 
         List<Part> archivos = new ArrayList<>();
-        for (int i = 1; i <= 45; i++) {
+        for (int i = 1; i <= 15; i++) {
             archivos.add(request.getPart("csv" + i));
         }
-        System.out.println("CSV"+1+archivos);
+        //System.out.println("CSV"+1+archivos);
 
         StoreCSV csv = new StoreCSV();
         csv.StoreCsv(document, archivos, action);

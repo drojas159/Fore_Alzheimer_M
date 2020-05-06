@@ -61,7 +61,7 @@ public class StoreCSV {
                     MongoCollection<Document> collection = database.getCollection("EEG_" + doc + "_" + i);
                     ArrayList<ArrayList<String>> datos = readCSV(archivo);
 
-                    System.out.println(datos);
+                    //System.out.println(datos);
 
                     List<Document> documents = new ArrayList<>();
 

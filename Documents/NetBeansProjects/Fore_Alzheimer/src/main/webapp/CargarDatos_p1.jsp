@@ -243,7 +243,7 @@ and open the template in the editor.
 
                                     </td>
                                 </tr>
-                                
+                                <!--
                                 <tr>
                                     <th scope ="col" rowspan="3"> Ejercicio 06 </th>
                                     <td scope ="col" > 1 </td>
@@ -453,7 +453,7 @@ and open the template in the editor.
 
                                     </td>
                                 </tr>
-
+-->
                             </tbody>
                         </table>
 

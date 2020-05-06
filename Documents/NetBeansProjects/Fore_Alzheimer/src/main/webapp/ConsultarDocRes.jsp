@@ -111,8 +111,9 @@ and open the template in the editor.
                             <a href="#">Fore-Alzheimer</a>
                         </li>
                         <li class="breadcrumb-item active">
-                            <i class="fas fa-fw fa-cloud-upload-alt"></i>
-                            Cargar Datos</li>
+                            <i class="far fa-fw fa-file-alt"></i>
+                            
+                            Resultados</li>
                     </ol>
 
 

@@ -101,6 +101,7 @@ and open the template in the editor.
                 <li class="nav-item active">
                     <a class="nav-link" href="ConsultarDocRes.jsp"> <!-- cambiar a charts.html-->
                         <i class="far fa-fw fa-file-alt"></i>
+                        
                         <span>Reportes</span></a>
                 </li>
             </ul>
@@ -113,7 +114,11 @@ and open the template in the editor.
                         <li class="breadcrumb-item">
                             <a href="#">Fore-Alzheimer</a>
                         </li>
-                        <li class="breadcrumb-item active">Reportes</li>
+                        
+                        
+                        <li class="breadcrumb-item active">
+                            <i class="far fa-fw fa-file-alt"></i>
+                        <span>Resultados</span>
                     </ol>
 
                     <div class="panel panel-default">

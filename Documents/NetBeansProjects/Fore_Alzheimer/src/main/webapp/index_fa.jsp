@@ -1,6 +1,6 @@
 <%-- 
-    Document   : modelo
-    Created on : 3/01/2020, 01:26:24 PM
+    Document   : index
+    Created on : 3/01/2020, 01:25:51 PM
     Author     : Daniela
 --%>
 
@@ -11,7 +11,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html lang="en">
+<html lang="es">
     <head>
         <title>Fore-Alzheimer</title>
         <link rel="icon" type="image/jpg" href="./image/ICON.png"/>
@@ -33,10 +33,26 @@ and open the template in the editor.
     <body>
         <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-            <a class="navbar-brand mr-1" href="index.jsp">Fore-Alzheimer</a>
+            <!--<a class="navbar-brand mr-1" href="#">Fore-Alzheimer</a>-->
+            <a class="navbar-brand mr-1">
+                <a class="navbar-brand mr-1" href="index.jsp" >
+                    <i class="fas fa-home"></i>
+                   
+                    <span>GISIC</span>
+                </a>
+                <li class="breadcrumb-item active">
+                    <a  href="#" color="#a5e0ff">
+                        
+                       <strong>
+                        <span>Fore-Alzheimer</span>
+                    </strong>
+                    </a>
+                </li>
+                
+            </a>
             <!-- Navbar Search -->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-                
+
             </form>
 
             <!-- Navbar -->
@@ -45,7 +61,7 @@ and open the template in the editor.
 
                 <li class="nav-item dropdown no-arrow">
                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <label>Perfil</label>  <i class="fas fa-user-circle fa-fw"></i>
+                        <label>Perfil</label> <i class="fas fa-user-circle fa-fw"> </i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#">Configuraciones</a> 
@@ -63,10 +79,8 @@ and open the template in the editor.
             <ul class="sidebar navbar-nav">
 
                 <!-- 1. Panel de Conrtrol 
-
-                <!-- 1. Panel de Conrtrol 
-                <li class="nav-item">
-                    <a class="nav-link" href="index.jsp">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Panel de Control</span>
                     </a>
@@ -91,8 +105,8 @@ and open the template in the editor.
                     -->
                 </li>
                 <!-- 3. Ejecutar Modelo-->
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">
+                <li class="nav-item">
+                    <a class="nav-link" href="ConsultarDocPred.jsp">
                         <i class="fas fa-fw fa-signal"></i>
                         <span>Ejecutar Modelo Predictivo</span></a>
                 </li>
@@ -113,29 +127,27 @@ and open the template in the editor.
                         <li class="breadcrumb-item">
                             <a href="#">Fore-Alzheimer</a>
                         </li>
-                        <li class="breadcrumb-item active">
-                        <i class="fas fa-fw fa-signal"></i>
-                        Predicción de Alzheimer</li>
-                        
+                        <li class="breadcrumb-item active">Inicio</li>
                     </ol>
-
-
                     <div class="jumbotron">
-
-                        <form   name="modelo" method="post" enctype="multipart/form-data" style="" action="ModelExecution">
-                            <center>
-                                
-                                <h2> Datos cargados correctamente</h2>
-                                <br><br>
-                                <!--<input type="submit" lass="btn btn-primary btn-lg active" value="Siguiente">-->
-
-                                <button type="submit" class="btn btn-primary btn-lg active">Ejecutar Modelos Predictivos</button>
-                            </center>
-                        </form>
+                        <center>
+                        <h1>¡Bienvenido a Fore-Alzheimer!</h1>
+                        <br>
+                        <p>En este sistema podrá cargar los archivos .csv generados con el Emotiv EPOC+ y el Eye Tracker que fueron 
+                            resultado de una serie de terapias cognitivas aplicadas a un paciente que desea conocer su probabilidad de padecer la Enfermedad de Alzheimer a los 65 años.
+                        <br>   
+                        <br>
+                        <p>Haga click para empezar a cargar datos.</p>
+                        <br>
+                        <p><a class="btn btn-primary btn-lg" href="ConsultarDoc.jsp" role="button">Cargar Datos</a></p>
+                        </center>
                     </div>
+                    
+
 
 
                 </div>
+
 
 
                 <!-- Footer -->
